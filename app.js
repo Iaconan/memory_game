@@ -74,7 +74,7 @@ createBoard()
 
 function checkMatch() {
     const cards = document.querySelectorAll('img')
-    if (cardChosen(0) === cardChosen[1]) {
+    if (cardChosen[0] === cardChosen[1]) {
         alert('You found a match!')
         cards[cardChosenIds[0]].setAttribute('src', 'images/white.png')
         cards[cardChosenIds[1]].setAttribute('src', 'images/white.png')
